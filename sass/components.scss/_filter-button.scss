@@ -1,0 +1,59 @@
+.flex-filter {   
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);}   
+
+.filter-button{
+    @include flex-center;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    margin-bottom: 50px; 
+    padding-left: 0%;
+    padding-right: 0%;
+padding-inline-start: 0%;
+
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
+
+.filter-button__button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    border-radius: 4px;
+    border: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+     &:focus {
+        box-shadow: 0px 3px 1px $button-close, 0px 1px 2px $filter-button-color, 0px 2px 2px $button-hover-color;
+    } 
+  
+&:hover,
+&:focus{
+    background-color: $accent-text-color;
+    color: $fon-text-color;} }
+    
+    .filter-button__item:not(:last-child){
+        margin-right: 8px;
+    }
+
+    .filter-button__item .auth-nav__link{
+        margin-right: 6px;
+        margin-bottom: 50px;
+        margin-top: 95px;}   
+    
