@@ -1,0 +1,96 @@
+footer{
+    background: $bg-color;
+    color: $fon-text-color;
+    padding-top: 60px;
+    padding-bottom: 60px;}
+
+.footer-address__list {
+       padding-inline-start: 0;} 
+             
+.footer-address__link  {
+    color: $fon-text-color;
+    @extend %address;}   
+
+.footer-address__links {
+        color: $fon-text-color-rgba;
+        @extend %address;}
+.footer-address__link  
+       {    margin-bottom: 9px;} 
+.footer-address__link :nth-child(4n) {
+        margin-bottom: 0px;}
+.footer-address__links:hover, 
+.footer-address__links:focus {
+    color: $accent-text-color;}
+
+.footer-address__link:hover, 
+.footer-address__link:focus {
+ color: $accent-text-color;}
+
+ .footer-social {
+    margin-left: 70px; }
+
+
+.footer-social__list {
+    @include flex-center;
+    margin-top: 30px;
+}
+.footer-social__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: center ;
+}
+.footer-social__item:not(:first-child) {
+    margin-left: 10px;
+} 
+.footer-social__link {
+    display: flex;
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: $fon-text-color;
+   }
+
+.footer-social__links {
+    @include flex-center;
+    background-color: $team-links-color;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-text-color;}
+
+    &:hover svg,
+    &:focus svg{
+            fill: $fon-text-color;
+}}
+
+.footer-social__icon {
+        fill: $fon-text-color;
+        width: 20px;
+        height: 20px;
+      }
+
+.footer-social__title {
+    font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.flex-containers {
+    @include flex-center;
+    }
+.footer .container {
+        display: flex;
+        align-items: baseline;
+    }
+  
