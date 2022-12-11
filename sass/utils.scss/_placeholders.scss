@@ -1,0 +1,22 @@
+%button {
+    text-align: center;
+    color: $fon-text-color;
+    background: $accent-text-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+%container  {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;}
+
+%address {
+    font-size: 14px;
+    line-height: 1.71;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
