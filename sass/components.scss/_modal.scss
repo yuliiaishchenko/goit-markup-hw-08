@@ -1,0 +1,164 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $backdrop;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: $modal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-close {
+    @include flex-center;
+    position: absolute;
+    right: 0;
+    top: 0;
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+      margin-top: 8px;
+      margin-bottom: auto;
+      margin-left: auto;
+      padding: 0;
+      border: 1px solid $button-close;
+      border-radius: 50%;
+      background: $fon-text-color;
+  cursor: pointer;
+}
+
+  .button-close:hover .modal__icon,
+  .button-close:focus .modal__icon
+{fill: $accent-text-color;}
+
+.modal__icon {
+    color: $modal-svg;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-hero {
+    padding: 40px;}
+.form-hero__div{
+        position: relative;  
+    }
+.form-hero__input {
+   height: 40px;
+   width: 100%;
+   padding-left: 43px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+&:hover,
+&:focus {
+    border-color: $accent-text-color; }
+ }
+
+ .form-hero__icon{
+ position: absolute;
+ width: 18px;
+ height: 18px;
+ top: 10px;
+ left: 12px;
+ fill: $primary-text-color;
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+ .form-hero__input:hover +.form-hero__icon,
+ .form-hero__input:focus +.form-hero__icon{
+    fill: $accent-text-color;
+ }
+
+
+.form-hero__group {
+    display: block;
+    }
+.form-hero__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.666;
+    letter-spacing: 0.01em;
+    color: $title-text-color;
+    }
+.form-hero__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin-bottom: 12px;
+        }
+
+textarea {
+    resize: none;
+    }
+    .hero-textarea {
+        width: 100%;
+        height: 132px;
+        font-size: 12px;
+        line-height: 1.1666;
+        letter-spacing: 0.01em;
+        padding: 12px 16px;
+        color: $textarea-color;
+        outline: transparent;
+        border: 1px solid $textarea-border;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+    
+    &:hover,
+   &:focus {
+    border-color: $accent-text-color;
+    }}
+    .form-button {
+        display: block; 
+        align-items: center;
+        justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+        margin: auto;
+        margin-top: 30px;
+        background: $accent-text-color;
+    box-shadow: 0px 4px 4px $form-button;
+    border-radius: 4px;
+    color: $fon-text-color;
+    padding: 10px 52px;
+    border-color: transparent;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+&:hover,
+&:focus {
+    background: $button;   
+}
+    }
