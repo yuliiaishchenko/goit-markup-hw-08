@@ -1,0 +1,15 @@
+header {
+    letter-spacing: 0.02em;}
+
+.page-header {
+    border-bottom: 1px solid $main-color;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    } 
+
+.logo-nav__accent {
+    color: $accent-text-color;}
+
