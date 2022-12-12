@@ -6,21 +6,52 @@
 }
 
 .team-list {
+    // display: flex;
+    // flex-wrap: wrap;
+    margin: 0;
+    padding-inline-start: 0%;
+@media  screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    padding-inline-start: 0%;}
+}}
 
 
 .team-list__item {
         background-color: $fon-text-color;
         margin-right: 30px;
-        width: calc((100% - 90px)/4);
+        margin-bottom: 30px;
+        // width: calc((100% - 90px)/4);
         box-shadow: 0px 2px 1px 0px
         $backdrop;
+        @media  screen and (max-width: 767px){
+            margin-right: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }}
+            @media  screen and (min-width: 768px)
+        {flex-basis: calc((100% - 30px)/2);
+        @media  screen and (max-width: 1199px)     {
+            &:nth-child(even){
+                margin-right: 0;
+            }
+        } 
+    &:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }}
+    @media  screen and (min-width: 1200px){
+        flex-basis: calc((100% - 90px)/4);
+        margin-right: 30px;
+        margin-bottom: 0;
 
-&:nth-child(4n) {
-    margin-right: 0%;}
+        &:last-child{
+            margin-right: 0;
+            
+        }
+    }
 }
+// &:nth-child(4n) {
+//     margin-right: 0%;}
+
 
 
 .team-list__box {
