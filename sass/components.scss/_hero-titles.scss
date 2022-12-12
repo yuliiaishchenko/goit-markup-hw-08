@@ -10,22 +10,53 @@
     clip: rect(0 0 0 0);}
 
 .flex-hero {
-    display: flex;
-    flex-wrap: wrap;
     margin-right: 0%;
     padding-inline-start: 0%;
-    align-items: baseline;
-&:nth-child(4n) {
-        margin-right: 0;}  }
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    }
+//     align-items: baseline;
+//     display: flex;
+//     flex-wrap: wrap;
+// &:nth-child(4n) {
+//         margin-right: 0;}  }
 
  
 .flex-hero__item {
     margin-right: 30px;
-    width: calc((100% - 90px)/4);
+    margin-bottom: 30px;
 
-&:nth-child(4n) {
-    margin-right: 0%;}
-}
+ @media screen and (max-width: 767px) {
+        margin-right: 0;
+        &:last-child {
+            margin-bottom: 0;
+        }}
+
+     @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px)/2);
+        @media screen and (max-width: 1199px)
+        {
+        &:nth-child(even){
+            margin-right: 0;}
+        &:nth-last-child(-n+2){
+            margin-bottom: 0;
+        }}}
+     @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px)/4);
+        margin-right: 30px;
+        margin-bottom: 0;
+        &:last-child {
+            margin-right: 0;
+        }
+     }
+    }
+//     width: calc((100% - 90px)/4);
+
+// &:nth-child(4n) {
+//     margin-right: 0%;}
+
 .flex-hero__box {
     @include flex-center;
     height: 120px;
@@ -33,10 +64,18 @@
     background-color: $box-color;
     margin-bottom: 30px;
     border-radius: 4px;
+    @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 90px)/4);
+        margin-right: 30px;
+        margin-bottom: 0;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
          }
-.icon-box :nth-last-child(4) {
-    margin-right: 0;
-        }    
+// .icon-box :nth-last-child(4) {
+//     margin-right: 0;
+//         }    
         .flex-hero__icon {
     width: 70px;
     height: 70px;
@@ -48,7 +87,14 @@
     line-height: 1.14;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
+    margin-top: 0;
+
+@media screen and (max-width: 767px)
+{justify-content: center;}
+}
+
+
     .flex-hero__text{
     color: title-text-color;
     font-size: 14px;
