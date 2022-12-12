@@ -1,5 +1,17 @@
 .hero-checkbox {
-    @include flex-center;}
+    @include flex-center;
+position: relative;
+cursor: pointer;
+@media  screen and (max-width: 1199px){
+    font-size: 12px;
+    line-height: 1.16;
+    margin-top: 20px;
+}
+@media  screen and (min-width: 479px){
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 28px;
+}}
 
 .hero-checkbox__text {
     font-size: 14px;
