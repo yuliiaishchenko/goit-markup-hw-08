@@ -1,5 +1,9 @@
 .about.section {
-    padding-top: 0;}
+    padding-top: 0;
+@media screen and (max-width:1199px) {
+    display: none;}
+
+}
 .section-primary {
         color: $primary-text-color;
         font-weight: 700;
