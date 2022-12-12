@@ -3,7 +3,32 @@ footer{
     color: $fon-text-color;
     padding-top: 60px;
     padding-bottom: 60px;}
-
+.footer-container {
+    
+    @media screen and (min-width: 768px){
+        display: flex;
+    };
+@media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+.footer-data {
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+.footer-address {
+    @media  screen and (max-width: 1199px) {
+        margin-top: 28px;        
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 20px;        
+    }
+}
 .footer-address__list {
        padding-inline-start: 0;} 
              
@@ -26,9 +51,30 @@ footer{
 .footer-address__link:focus {
  color: $accent-text-color;}
 
- .footer-social {
-    margin-left: 70px; }
+ .footer-address__item {
+    @media screen and (max-width: 1199px) {
+        margin-top: 0px;
+        margin-bottom: 12px;
+    };
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    };
+ }
 
+ .footer-social {
+    // margin-left: 70px; }
+    @media screen and (max-width: 767px)
+    {margin-top: 60px;}
+
+    @media screen and (min-width: 768px){
+        margin-left: 165px;
+    }
+    @media screen and (max-width: 1199px)
+    { text-align: center;}
+    @media screen and (min-width: 1200px)
+    {margin-left: 70px;
+    margin-top: 10px;}
+ }
 
 .footer-social__list {
     @include flex-center;
@@ -89,8 +135,8 @@ margin-bottom: 20px;
 .flex-containers {
     @include flex-center;
     }
-.footer .container {
-        display: flex;
-        align-items: baseline;
-    }
+// .footer .container {
+//         display: flex;
+//         align-items: baseline;
+//     }
   
