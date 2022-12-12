@@ -1,18 +1,38 @@
 .footer-form
-{display: flex ;
-flex-direction: column;
-margin-left: auto;}
-  
+// {display: flex ;
+// flex-direction: column;
+// margin-left: auto;}
+  {@media screen and (max-width: 1199px)
+  {margin-top: 60px;
+  text-align: center;};
+  @media screen and (min-width: 1200px)
+{display: block;
+margin-top: 10px;
+margin-left: 93px;}}
+
+
 .footer-form__input {
-    width: 358px;
+    // width: 358px;
     height: 50px;
    align-items: center;
    padding-left: 16px;
+   padding-top: 15px;
+   padding-bottom: 15px;
    border: 1px solid $border-input-color;
    filter: drop-shadow(0px 4px 4px $form-button);
    border-radius: 4px;
    background-color: $footer-input-color;
    color: $fon-text-color;
+
+   @media screen and (max-width: 1199px){
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+   }
+   @media screen and (min-width: 1200px){
+    width: 358px;
+    margin-right: 12px;
+   }
 }
 .footer-form__title {
         font-style: normal;
@@ -25,20 +45,31 @@ margin-left: auto;}
         }
 .footer-form__icon {
             width: 24px;
+            position: absolute;
             height: 24px;
+            top: 13px;
             fill: $fon-text-color;
-          margin-left: 10px;
+          // margin-left: 10px;
+          @media screen and (max-width: 1199px){
+            left: 155px;
+          }
+          @media screen and (min-width: 1200px){
+            right: 28px;
+          }
         }  
-        .footer-form__box
-        {display: flex ;} 
+        // .footer-form__box
+        // // {display: flex ;} 
 .footer-form__button {
-  @include flex-center;
-            padding-left: 28px;
-            padding-top: 10px;
-            padding-right: 28px;
-            padding-bottom: 10px;
+  // @include flex-center;
+            // padding-left: 28px;
+            // padding-top: 10px;
+            // padding-right: 28px;
+            // padding-bottom: 10px;
+            width: 200px;
+            height: 50px;
             background-color: $accent-text-color;
             border-radius: 4px;
+            border: none;
             color: $fon-text-color;
             font-style: normal;
             font-weight: 700;
@@ -55,5 +86,12 @@ margin-left: auto;}
         &:hover,
         &:focus {
             background-color: $button;
-        }    }
+        }   
+        @media screen and (max-width: 1199px) 
+      {position: relative; 
+      margin-top: 20px;
+    padding-right: 28px;}
+    @media screen and (min-width: 1200px)
+  {padding-right: 28px;
+  }}
   
