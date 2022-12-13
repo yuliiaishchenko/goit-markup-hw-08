@@ -49,6 +49,7 @@ header {
 
 .page-header {
   border-bottom: 1px solid #ECECEC;
+  position: relative;
 }
 
 .logo-nav {
@@ -62,6 +63,45 @@ header {
 
 .logo-nav__accent {
   color: #2196F3;
+}
+
+.menu-container {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100vw;
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+.menu-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+.menu-button.icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .hero {
@@ -470,7 +510,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 12px;
+  margin-top: 40px;
 }
 
 textarea {
@@ -509,6 +549,7 @@ textarea {
   letter-spacing: 0.06em;
   margin: auto;
   margin-top: 30px;
+  margin-bottom: 40px;
   background: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1495,6 +1536,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   .footer-form__button {
+    position: relative;
     padding-right: 28px;
   }
 }
