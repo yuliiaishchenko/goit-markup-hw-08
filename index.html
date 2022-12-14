@@ -15,23 +15,10 @@
 
 <body class="body">
     <header class="page-header">  
-        <div class="container-nav">
-        <nav class="logo-nav">           
+    <div class="container-nav">
+               
             <a href="./index.html" class="logo-nav__link"><span class="logo-nav__accent">Web</span>Studio</a>
-            <button
-            class="menu-button"
-          aria-expanded="true"
-          aria-controls="mobile-menu"
-            type="button"
-            data-menu-button
-          >
-          <svg class="mobile-menu__icon" width="40px" height="40px"
-          aria-label="menu-change">
-        <use class="icon-cross" href="./images/menu.svg#icon-close_40px"></use> 
-        <use class="icon-menu" href="./images/menu.svg#icon-menu_40px"></use> 
-        </svg></button>
-        <div div class="menu-container" id="mobile-menu" data-menu>
-            <div class="navigation">
+            <nav class="logo-nav">       
             <ul class="site-nav ">
                 <li class="site-nav__item">
                     <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a></li>
@@ -40,7 +27,7 @@
                 <li class="site-nav__item">
                     <a href="" class="site-nav__link">Контакти</a></li>
             </ul>
-        </div>
+        </nav>
         <div class="site-auth-nav">
             <ul class="auth-nav">
                 <li class="auth-nav__item">
@@ -57,9 +44,71 @@
                   </li>
         </ul>
         </div>
+     <button class="menu-open"
+     type="button"
+     data-menu-open>
+    <svg class="menu-open__icon" 
+    width="40px" height="40px">
+    <use href="./images/menu.svg#icon-menu_40px" ></use>
+</svg>
+    </button>
+        
+        <div class="mobile-menu is-hidden" data-menu>
+        <button class="menu-close"
+        type="button"
+         data-menu-close >
+            <svg class="menu-close__icon" 
+            width="40px" height="40px">
+            <use href="./images/menu.svg#icon-close_40px" ></use>
+        </svg>
+        </button>
+        <div class="mobile-box">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="/index.html">Студія</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link"  href="" >Контакти</a>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <a  href="mailto:info@devstudio.com" class="mobile-mail"></a>
+                <a href="tel:+380961111111" class="mobile-contact"></a>
+                <ul class="mobile-social">
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Instagram</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="https://twitter.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Twitter</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-</nav>
-</div>
     </header>
     <main>
         <section class="hero">
@@ -551,13 +600,7 @@
 </div>
 
     </footer>   
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
