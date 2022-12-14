@@ -188,7 +188,11 @@
             <ul class="about-list">
                 <li class="about-list__item">
                     <div class="about-list__box">
-                    <img src="./images/photo.jpg" alt="Десктопнідодатки" width="370" />
+                    <img 
+                    srcset="./images/desktop/desktopapp.jpg 1x,
+                    ./images/desktop/desktopapp@2x.jpg 2x"
+                    src="./images/photo.jpg" alt="Десктопнідодатки" 
+                    width="370" />
                     <div class="about-list__coment">
                         <p class="about-list__text">Десктопні додатки</p>
                     </div>
@@ -196,7 +200,11 @@
                 </li>
                 <li class="about-list__item">
                     <div class="about-list__box">
-                    <img src="./images/images2.jpg" alt="мобільнідодатки" width="370" />
+                    <img 
+                    srcset="./images/desktop/mobileapp.jpg 1x,
+                    ./images/desktop/mobileapp@2x.jpg 2x"
+                    src="./images/images2.jpg" alt="мобільнідодатки" 
+                    width="370" />
                     <div class="about-list__coment">
                     <p class="about-list__text" >Мобільні додатки</p>
                 </div>
@@ -204,7 +212,10 @@
                 </li>
                 <li class="about-list__item">
                     <div class="about-list__box">
-                    <img src="./images/images3.jpg" alt="дизайнерськірішення" width="370" />
+                    <img
+                    srcset="./images/desktop/designe.jpg 1x,
+                    ./images/desktop/designe@2x.jpg 2x"                    
+                    src="./images/images3.jpg" alt="дизайнерськірішення" width="370" />
                     <div class="about-list__coment">
                     <p class="about-list__text">Дизайнерські рішення</p>
                 </div>
@@ -221,9 +232,17 @@
                 <li class="team-list__item">
                     <picture>
                         <source
-                        srcset="./images/desktop/ihor.jpg  270px,
-                        ./images/desktop/ihor@2x.jpg  270"
+                        srcset="./images/desktop/ihor.jpg  1x,
+                        ./images/desktop/ihor@2x.jpg  2x"
                         media="(min-width:1200px)"/>
+                        <source
+                        srcset="./images/tablet/ihor.jpg 1x,
+                        ./images/tablet/ihor@2x.jpg 2x"
+                        media="(max-width:1199px)"/>
+                        <source
+                        srcset="./images/ihormob.jpg 1x,
+                        ./images/ihormob@2x.jpg 2x"
+                        media="(max-width:767px)"/>
                     <img                      
                     src="./images/ihordemyanenko.jpg" alt="ihordemyanenko.jpg"  />
                 </picture>
@@ -263,7 +282,21 @@
                 </div>
                 </li>
                 <li class="team-list__item">
+                    <picture>
+                        <source
+                        srcset="./images/desktop/olga.jpg  1x,
+                        ./images/desktop/olga@2x.jpg  2x"
+                        media="(min-width:1200px)"/>
+                        <source
+                        srcset="./images/tablet/olha.jpg 1x,
+                        ./images/tablet/olha@2x.jpg 2x"
+                        media="(max-width:1199px)"/>
+                        <source
+                        srcset="./images/mobile/olga.jpg 1x,
+                        ./images/mobile/olga@2x.jpg 2x"
+                        media="(max-width:767px)"/>
                     <img src="./images/olharepina.jpg" alt="olharepina"  />
+                     </picture>
                     <div class="team-list__box">
                     <h3 class="team-list__title">Ольга Рєпіна</h3>
                     <p lang="en" class="team-list__text">Frontend Developer</p>
@@ -300,7 +333,21 @@
                 </div>
                 </li>
                 <li class="team-list__item">
+                    <picture>
+                    <source
+                        srcset="./images/desktop/mykola.jpg  1x,
+                        ./images/desktop/mykola@2x.jpg  2x"
+                        media="(min-width:1200px)"/>
+                        <source
+                        srcset="./images/tablet/mykola.jpg 1x,
+                        ./images/tablet/mykola@2x.jpg 2x"
+                        media="(max-width:1199px)"/>
+                        <source
+                        srcset="./images/mobile/mykola.jpg 1x,
+                        ./images/mobile/mykola@2x.jpg 2x"
+                        media="(max-width:767px)"/>
                     <img src="./images/mykolatarasov.jpg" alt="mykolatarasov"  />
+                    </picture>
                     <div class="team-list__box">
                     <h3 class="team-list__title">Микола Тарасов</h3>
                     <p lang="en" class="team-list__text">Marketing</p>
@@ -337,7 +384,21 @@
                 </div>
                 </li>
                 <li class="team-list__item">
+                    <picture>
+                        <source
+                            srcset="./images/desktop/mychailo.jpg  1x,
+                            ./images/desktop/mychailo@2x.jpg  2x"
+                            media="(min-width:1200px)"/>
+                            <source
+                            srcset="./images/tablet/mychailo.jpg 1x,
+                            ./images/tablet/mychailo@2x.jpg 2x"
+                            media="(max-width:1199px)"/>
+                            <source
+                            srcset="./images/mobile/mychailo.jpg 1x,
+                            ./images/mobile/mychailo@2x.jpg 2x"
+                            media="(max-width:767px)"/>
                     <img src="./images/mychailoermakov.jpg" alt="mychailoermakov" />
+                    </picture>
                     <div class="team-list__box">
                     <h3 class="team-list__title">Михайло Єрмаков</h3>
                     <p lang="en" class="team-list__text">UI Designer</p>
