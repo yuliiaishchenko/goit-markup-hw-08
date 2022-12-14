@@ -3,14 +3,24 @@ header {
 
 .page-header {
     border-bottom: 1px solid $main-color;
-    position: relative;
 }
-
-.logo-nav {
+.container-nav{
     display: flex;
     align-items: center;
+}
+.logo-nav {
+    // display: flex;
+    // align-items: center;
+display: none;
+@media screen and (min-width: 768px){
+    display: block;
+    // min-width: 282px;
+    margin-left: 88px;
+}
+@media screen and (min-width: 1200px){
+    margin-left: 93px;
+ }   
     } 
 
 .logo-nav__accent {
     color: $accent-text-color;}
-
