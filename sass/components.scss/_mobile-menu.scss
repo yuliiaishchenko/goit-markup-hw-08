@@ -31,7 +31,7 @@
     padding-right: 40px;
     overflow: auto;
     background-color: $fon-text-color;
-
+    height: 100vh;
     z-index: 1;
     @media screen and (min-width: 768px)
     {display: none;
