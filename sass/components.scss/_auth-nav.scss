@@ -25,7 +25,6 @@ margin-left: auto;
 }
 @media screen and (min-width: 1200px){
     flex-direction: row;
-    gap: 50px;
 }
 }
 // .site-auth-nav {
@@ -68,3 +67,11 @@ margin-left: auto;
         padding: 0;
    &:nth-child(2n) {
             margin-right: 0%;} }
+    .site-auth-nav {
+        @media screen and (min-width:768px) {
+            @media screen and (max-width:1199px) {
+                margin-left: 96px;
+            }
+            
+        }
+    }
