@@ -2,7 +2,9 @@
 @import './components.scss/reset-styles';
 @import './utils.scss/mixin';
 @import './components.scss/body';
+@import './components.scss/container';
 @import './components.scss/page-header';
+
 @import './components.scss/mobile-menu';
 @import './components.scss/hero';
 @import './utils.scss/placeholders';
@@ -18,7 +20,7 @@
 @import './components.scss/site-nav';
 @import './components.scss/auth-nav';
 @import './components.scss/footer-form';
-@import './components.scss/container';
+
 @import './components.scss/section';
 @import './components.scss/checkbox';
 
