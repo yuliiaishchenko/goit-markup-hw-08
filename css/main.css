@@ -570,6 +570,7 @@ header {
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -593,15 +594,12 @@ header {
   .modal {
     width: calc(100% - 30px);
     max-width: 450px;
-    padding-left: 8px;
-    padding-right: 8px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .modal {
     width: 100%;
     max-width: 450px;
-    padding-top: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -654,17 +652,6 @@ header {
 .form-hero {
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (min-width: 480px) {
-  .form-hero {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .form-hero {
-    padding-bottom: 40px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .form-hero {
@@ -1663,7 +1650,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 60px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -1709,12 +1695,6 @@ footer {
   }
   .auth-nav__item:nth-child(2n) {
     margin-right: 0%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .site-auth-nav {
-    margin-left: 96px;
   }
 }
 
