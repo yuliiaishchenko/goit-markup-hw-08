@@ -268,6 +268,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -283,7 +285,7 @@ header {
 .mobile-social__link {
   font-weight: 500;
   font-size: 18px;
-  line-height: 1, 22;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
 }
@@ -572,7 +574,6 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 40px;
   background-color: rgb(255, 255, 255);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -590,6 +591,8 @@ header {
 }
 @media screen and (max-width: 479px) {
   .modal {
+    width: calc(100% - 30px);
+    max-width: 450px;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -1554,6 +1557,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
+  height: 80px;
 }
 
 .site-nav__link {
@@ -1583,7 +1587,7 @@ footer {
   position: absolute;
   display: none;
   width: 100%;
-  bottom: -1px;
+  bottom: 8px;
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
@@ -1698,14 +1702,6 @@ footer {
           align-items: center;
   justify-items: flex-end;
   padding: 0;
-}
-@media screen and (max-width: 1199px) {
-  .auth-nav__item {
-    margin-bottom: 10px;
-  }
-  .auth-nav__item:nth-child(2n) {
-    margin-bottom: 0%;
-  }
 }
 @media screen and (min-width: 1200px) {
   .auth-nav__item {
@@ -1831,8 +1827,18 @@ footer {
 
 .section {
   color: #212121;
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .hero-checkbox {
