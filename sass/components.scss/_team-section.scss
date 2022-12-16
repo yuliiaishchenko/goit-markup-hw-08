@@ -1,8 +1,13 @@
 .team-section 
 {color: $primary-text-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: $box-color;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;  
+    }
 }
 
 .team-list {
