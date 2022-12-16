@@ -870,9 +870,15 @@ textarea {
 
 .team-section {
   color: #212121;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #F5F4FA;
+}
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-list {
@@ -1574,7 +1580,7 @@ footer {
   position: absolute;
   display: none;
   width: 100%;
-  bottom: -1px;
+  bottom: 9px;
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
@@ -1650,6 +1656,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 60px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
