@@ -1574,7 +1574,7 @@ footer {
   position: absolute;
   display: none;
   width: 100%;
-  bottom: 8px;
+  bottom: -1px;
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
