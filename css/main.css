@@ -1323,15 +1323,6 @@ footer {
 }
 
 .filter-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -1347,6 +1338,28 @@ footer {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .filter-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .filter-button__button {
@@ -1385,8 +1398,24 @@ footer {
   margin-top: 95px;
 }
 
+@media screen and (max-width: 767px) {
+  .filter-button__item {
+    margin-bottom: 15px;
+  }
+}
+.filter-button__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
 .portfolio-section__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1463,6 +1492,9 @@ footer {
 }
 
 .portfolio-section__box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -1598,7 +1630,7 @@ footer {
   position: absolute;
   display: none;
   width: 100%;
-  bottom: -1px;
+  bottom: 1px;
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
